@@ -17,7 +17,7 @@ namespace Day5_Functional_Programs
                 Num += (1 / i);
                 Res = Num;
             }
-            Console.WriteLine("Harmonic Number of " + n + " is " + Res);
+            Console.WriteLine("print value of Num = "+(1/i)+"Harmonic Number of " + n + " is " + Res);
         }
     }
 }
