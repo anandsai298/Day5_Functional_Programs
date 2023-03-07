@@ -10,7 +10,7 @@ namespace Day5_Functional_Programs
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.FILPCOIN \n2. EXit");
+                Console.WriteLine("1.FILPCOIN \n2.LeapYear \n3. EXit");
                 Console.WriteLine("enter your option to print output");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -22,6 +22,10 @@ namespace Day5_Functional_Programs
                         fc.Flip(NoOfTimes);
                         break;
                     case 2:
+                        LeapYear Yr = new LeapYear();
+                        Yr.LY();
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
