@@ -10,7 +10,7 @@ namespace Day5_Functional_Programs
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.FILPCOIN \n2.LeapYear \n3.PowerOf2 \n4.HarmonicNumber \n5.PrimeFactorial \n6.Quotient_Remainder\n7.Swap_2_Nums\n8. EXit");
+                Console.WriteLine("1.FILPCOIN \n2.LeapYear \n3.PowerOf2 \n4.HarmonicNumber \n5.PrimeFactorial \n6.Quotient_Remainder\n7.Swap_2_Nums\n8.Even_Odd\n9. EXit");
                 Console.WriteLine("enter your option to print output");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -50,6 +50,11 @@ namespace Day5_Functional_Programs
                         swap.Swap(2, 3);
                         break;
                     case 8:
+                        Even_Odd eo = new Even_Odd();
+                        Console.WriteLine("even or odd of an number");
+                        eo.EO(90);
+                        break;
+                    case 9:
                         flag = false;
                         break;
                 }
