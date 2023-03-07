@@ -10,7 +10,7 @@ namespace Day5_Functional_Programs
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.FILPCOIN \n2.LeapYear \n3.PowerOf2 \n4.HarmonicNumber \n5.PrimeFactorial \n6. EXit");
+                Console.WriteLine("1.FILPCOIN \n2.LeapYear \n3.PowerOf2 \n4.HarmonicNumber \n5.PrimeFactorial \n6.Quotient_Remainder\n7. EXit");
                 Console.WriteLine("enter your option to print output");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -40,6 +40,11 @@ namespace Day5_Functional_Programs
                         PM.Factors(15);
                         break;
                     case 6:
+                        Quotient_Remainder qr = new Quotient_Remainder();
+                        Console.WriteLine("Quotient and reaminder of divident=10 and divisor=5 is :");
+                        qr.QR(10, 5);
+                        break;
+                    case 7:
                         flag = false;
                         break;
                 }
