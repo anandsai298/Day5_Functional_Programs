@@ -10,7 +10,7 @@ namespace Day5_Functional_Programs
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.FILPCOIN \n2.LeapYear \n3.PowerOf2 \n4. EXit");
+                Console.WriteLine("1.FILPCOIN \n2.LeapYear \n3.PowerOf2 \n4.HarmonicNumber \n5. EXit");
                 Console.WriteLine("enter your option to print output");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -30,6 +30,11 @@ namespace Day5_Functional_Programs
                         p.Show(5);
                         break;
                     case 4:
+                        HarmonicNumber hn = new HarmonicNumber();
+                        Console.WriteLine("enter Harmonic number value");
+                        hn.HN(5);
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
