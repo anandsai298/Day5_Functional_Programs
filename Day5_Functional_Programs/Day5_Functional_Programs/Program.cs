@@ -10,7 +10,7 @@ namespace Day5_Functional_Programs
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.FILPCOIN \n2.LeapYear \n3.PowerOf2 \n4.HarmonicNumber \n5.PrimeFactorial \n6.Quotient_Remainder\n7.Swap_2_Nums\n8.Even_Odd\n9. EXit");
+                Console.WriteLine("1.FILPCOIN \n2.LeapYear \n3.PowerOf2 \n4.HarmonicNumber \n5.PrimeFactorial \n6.Quotient_Remainder\n7.Swap_2_Nums\n8.Even_Odd\n9.vowel_Constant1\n10. EXit");
                 Console.WriteLine("enter your option to print output");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -55,6 +55,11 @@ namespace Day5_Functional_Programs
                         eo.EO(90);
                         break;
                     case 9:
+                        vowel_Constant1 alph = new vowel_Constant1();
+                        Console.WriteLine("Given charcater is vowel or constant");
+                        alph.Alphabet();
+                        break;
+                    case 10:
                         flag = false;
                         break;
                 }
