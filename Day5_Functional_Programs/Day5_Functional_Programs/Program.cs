@@ -10,7 +10,7 @@ namespace Day5_Functional_Programs
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.FILPCOIN \n2.LeapYear \n3.PowerOf2 \n4.HarmonicNumber \n5.PrimeFactorial \n6.Quotient_Remainder\n7. EXit");
+                Console.WriteLine("1.FILPCOIN \n2.LeapYear \n3.PowerOf2 \n4.HarmonicNumber \n5.PrimeFactorial \n6.Quotient_Remainder\n7.Swap_2_Nums\n8. EXit");
                 Console.WriteLine("enter your option to print output");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -45,6 +45,11 @@ namespace Day5_Functional_Programs
                         qr.QR(10, 5);
                         break;
                     case 7:
+                        Swap_2_Nums swap = new Swap_2_Nums();
+                        Console.WriteLine("Swapping of two numbers");
+                        swap.Swap(2, 3);
+                        break;
+                    case 8:
                         flag = false;
                         break;
                 }
