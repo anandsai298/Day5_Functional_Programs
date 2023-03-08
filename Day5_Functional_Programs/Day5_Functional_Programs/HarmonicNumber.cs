@@ -14,10 +14,11 @@ namespace Day5_Functional_Programs
             n = Convert.ToInt32(Console.ReadLine());
             for (i=1;i<=n;i++)
             {
+                Console.WriteLine("print value of Num = 1/" + i +"+" );
                 Num += (1 / i);
                 Res = Num;
             }
-            Console.WriteLine("print value of Num = "+(1/i)+"Harmonic Number of " + n + " is " + Res);
+            Console.WriteLine("Harmonic Number of " + n + " is " + Res);
         }
     }
 }
