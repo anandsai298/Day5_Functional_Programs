@@ -8,9 +8,9 @@ namespace Day5_Functional_Programs
 {
     public class Quotient_Remainder
     {
-        public void QR(double Divident, double Divisor)
+        public void QR(int Divident, int Divisor)
         {
-            double Quotient = 0, Remainder = 0;
+            int Quotient = 0, Remainder = 0;
             Divident = Convert.ToInt32(Console.ReadLine());
             Divisor = Convert.ToInt32(Console.ReadLine());
             Quotient = (Divident / Divisor);
